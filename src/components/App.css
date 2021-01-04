@@ -2,8 +2,57 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .app {
-  text-align: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+
+.search-btn {
+  background: lightcoral;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px #cf8065;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #fff;
+  align-items: center;
+  min-width: 40%;
+  padding-left: 15px;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 8px 0 12px;
 }
