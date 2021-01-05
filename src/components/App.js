@@ -38,6 +38,7 @@ function App() {
 
   return (
     <div className="app">
+      <h1 className="heading">Recipe App</h1>
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={handleSearch} placeholder="Search recipe..." required/>
         <button onClick={handleClick} className="search-btn" type="submit">Search</button>
