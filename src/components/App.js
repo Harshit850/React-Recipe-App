@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import Recipe from './Recipe';
 import './App.css'
 
+// enviornment variable
+require('dotenv').config();
+
 const axios = require('axios');
 
 function App() {
@@ -9,8 +12,8 @@ function App() {
   const [search, setSearch] = useState('');
   const [query, setQuery] = useState('');
 
-  const APP_ID = "6dbfa5af";
-  const APP_KEY = "d061b1c78111fc24e3b8148e3bfd25c9";
+  const APP_ID = process.env.REACT_APP_APP_ID;
+  const APP_KEY = process.env.REACT_APP_APP_KEY;
   const exampleReq = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
   const handleClick = () => {
